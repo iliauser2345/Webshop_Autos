@@ -1,4 +1,5 @@
 <header class="head&navbar">
+    <link rel="stylesheet" href="./includes/css/style.css">
     <h1>[Title van de webshop hier aub]</h1>
     <nav>
         <ul>
