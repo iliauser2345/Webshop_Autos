@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="./css/style.css">
 <header class="head&navbar">
     <h1>[Title van de webshop hier aub]</h1>
     <nav>
@@ -8,5 +9,5 @@
             <li><a href=""> [link naar pagina 4 hier]</a></li>
             <li><a href=""> [link naar pagina 5 hier]</a></li>
         </ul>
-    </nav>
+    </nav> 
 </header>

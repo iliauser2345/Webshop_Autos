@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="./css/style.css">
 <footer class="Foot&Con">
      <h2>Contact</h2>
     <form id="contactForm" class="contact-form" method="post" action="#" novalidate>
