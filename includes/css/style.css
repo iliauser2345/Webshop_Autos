@@ -6,27 +6,19 @@ body{
     opacity: 0.4;
 }
 
-/* Formulier */
 #contactForm {
     max-width: 400px;
     margin: 0 auto;
-    text-align: left;
 }
 
-/* Rijen */
-#contactForm .form-row {
-    margin-bottom: 15px;
-}
-
-/* Labels */
 #contactForm label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-/* De input velden */
-#name, #email, #subject, #message {
+#contactForm input,
+#contactForm textarea {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
@@ -34,16 +26,14 @@ body{
     box-sizing: border-box;
 }
 
-/* Text gebied */
 #message {
     resize: vertical;
 }
 
-/* Submit knop */
 #contactSubmit {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 15px;
+    padding: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -53,9 +43,8 @@ body{
     background-color: #45a049;
 }
 
-/* Formulier meldingen */
 #formNotice {
     margin-top: 10px;
-    font-size: 0.9em;
-    color: red; /* Als goed is verandert groen */
+    color: red;
 }
+
