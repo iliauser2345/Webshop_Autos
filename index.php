@@ -1,3 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Webshop Home</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <?php require "./includes/header.php"?>
+        
+        <main>
+
+        </main>
+        <?php require "./includes/footer.php"?>
+    </body>
+</html>
+
+
 <?
 
 echo "hallo";
