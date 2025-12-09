@@ -1,43 +1,63 @@
-/* Main css
-
-*/
-body{
-    background-color: rgb(223, 223, 223);
+/* Body */
+body {
+    background-color: #dfdfdf;
     opacity: 0.4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header Styles */
-.head&navbar {
-    background-color: #333;
+/* Header */
+.head_navbar {
+    background-color: #ba1717;
     color: white;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-
-
-
-
-
-/* Contact Form Styles */
-.Foot&Con {
-    background: #f2f2f2;
-    padding: 20px;
-    text-align: left; 
-    position: relative; 
-    height: 200px; 
-}
-
-.Foot&Con h2 {
-    margin-top: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#contactForm {
-    max-width: 400px;
+.head_navbar h1 {
     margin: 0;
 }
 
+.head_navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.head_navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.head_navbar nav ul li a:hover {
+    background-color: #911010;
+    border-radius: 4px;
+}
+
+/* Footer / Contact Form */
+.Foot_Con {
+    background: #f2f2f2;
+    padding: 20px;
+    position: relative;
+    height: 250px; /* pas aan naar wens */
+}
+
+/* Formulier linksonder plaatsen */
+#contactForm {
+    max-width: 400px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+}
+
+/* Labels en velden */
 #contactForm label {
     display: block;
     margin-bottom: 5px;
@@ -57,6 +77,7 @@ body{
     resize: vertical;
 }
 
+/* Submit knop */
 #contactSubmit {
     background-color: #4CAF50;
     color: white;
@@ -70,4 +91,8 @@ body{
     background-color: #45a049;
 }
 
-
+/* Formulier meldingen */
+#formNotice {
+    margin-top: 10px;
+    color: red;
+}
