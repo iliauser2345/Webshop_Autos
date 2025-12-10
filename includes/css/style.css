@@ -7,6 +7,12 @@ body {
     padding: 0;
 }
 
+
+
+
+
+
+
 /* Header */
 .head_navbar {
     background-color: #ba1717;
@@ -40,4 +46,63 @@ body {
     border-radius: 4px;
 }
 
-/* Contact Form Styles */ .Foot&Con { background: #f2f2f2; padding: 20px; text-align: left; position: relative; height: 200px; } .Foot&Con h2 { margin-top: 0; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; } #contactForm { max-width: 400px; margin: 0; } #contactForm label { display: block; margin-bottom: 5px; font-weight: bold; } #contactForm input, #contactForm textarea { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; } #message { resize: vertical; } #contactSubmit { background-color: #4CAF50; color: white; padding: 10px; border: none; border-radius: 4px; cursor: pointer; } #contactSubmit:hover { background-color: #45a049; }
+
+
+
+
+
+
+
+
+
+/* Footer / Contact Form */
+.Foot_Con {
+    background: #f2f2f2;
+    padding: 20px;
+    position: relative;
+    height: 250px; /* pas aan naar wens */
+}
+
+/* Formulier linksonder plaatsen */
+#contactForm {
+    max-width: 400px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+}
+
+/* Labels en velden */
+#contactForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#message {
+    resize: vertical;
+}
+
+/* Submit knop */
+#contactSubmit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contactSubmit:hover {
+    background-color: #45a049;
+}
+
