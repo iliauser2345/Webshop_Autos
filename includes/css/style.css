@@ -58,17 +58,14 @@ body {
     background: #f2f2f2;
     padding: 20px;
     position: relative;
-    height: 250px; /* pas aan naar wens */
 }
 
 /* Formulier linksonder plaatsen */
 #contactForm {
     max-width: 400px;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    margin: 0;
+    margin: 20px 0 0 20px;
 }
+
 
 /* Labels en velden */
 #contactForm label {
