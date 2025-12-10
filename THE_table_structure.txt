@@ -1,0 +1,26 @@
+Caelan doe dat alsjeblieft <3
+
+auto lijst----> hebben we al
+
+klanten lijst -> 
+        naam_tabel: klanten
+            id[int](9)
+            naam[varchar](255)
+            achternaam[varchar](255)
+            woonplaats[varchar](50)
+            woonadress[varchar](50)
+            postcode[varchar](10)
+            email[varchar](255)
+
+Bestellingen lijst->
+        naam_tabel: bestellingen
+            id[int](9)
+            id_klant[int](9)
+            id_auto[int](9)
+
+Contact opslag->
+        naam_tabel: Contact
+            id[int](9)
+            id_klant[int](9)
+            onderwerp[varchar](45)
+            bericht[text](150)
