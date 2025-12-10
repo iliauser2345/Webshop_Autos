@@ -1,4 +1,5 @@
 <footer class="Foot_Con">
+<link rel="stylesheet" href="./css/style.css">
      <h2>Contact</h2>
     <form id="contactForm" class="contact-form" method="post" action="#" novalidate>
             <div class="form-row">
