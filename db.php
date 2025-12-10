@@ -22,4 +22,7 @@ try {
 }
 
 // Gebruik de variabele $pdo in andere scripts na include/require
+
+//kut mongooooooool
 ?>
+
