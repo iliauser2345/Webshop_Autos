@@ -1,26 +1,26 @@
 <?php
-require "Car_list_TEMP.php"
+require "db.php"
 
 ?>
 <ul class="car_list">
     <?php
-    for($i=0;$i<count($FCL);$i++){
+    for($i=0;$i<count($imp_form_data_cars);$i++){
         echo 
         "<li class='auto_card'>
             <form action='CarPage.php' method='GET'>
                 <input type='hidden' name='ID' value='$i'>
-                <button type='submit'><img src=".$FCL[$i]['image']." alt='car_image' class='car_img'>
+                <button type='submit'><img src=".$imp_form_data_cars[$i]['image']." alt='car_image' class='car_img'>
                     <h4 class='car_name'>
-                        ".$FCL[$i]['name']." ".$FCL[$i]['model']."                    
+                        ".$imp_form_data_cars[$i]['merk']." ".$imp_form_data_cars[$i]['model']."                    
                     </h4>
                     <h6 class='car_prod_year'>
-                        ".$FCL[$i]['production_year']."
+                        ".$imp_form_data_cars[$i]['bouwjaar']."
                     </h6>
                     <h6 class='mileage'>
-                        ".$FCL[$i]['mileage']." km
+                        ".$imp_form_data_cars[$i]['kilometerstand']." km
                     </h6>
                     <h6 class='price'>
-                        ".$FCL[$i]['price']." EUR
+                        ".$imp_form_data_cars[$i]['prijs']." EUR
                     </h6>
                 </button>
             </form>

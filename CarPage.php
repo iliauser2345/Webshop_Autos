@@ -1,12 +1,12 @@
 <?php
-    include "Car_list_TEMP.php";
+    include "db.php";
     $id=$_GET['ID'];
-    $car_on_page_data=$FCL[$id];
+    $car_on_page_data=$imp_form_data_cars[$id];
 ?>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Webshop-<?php echo $car_on_page_data['name']." ".$car_on_page_data['model'];?></title>
+        <title>Webshop-<?php echo $car_on_page_data['merk']." ".$car_on_page_data['model'];?></title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="./includes/css/style.css">
     </head>
@@ -16,17 +16,23 @@
             <?php
                 echo 
                 "<h2>
-                    ".$car_on_page_data['name']." ".$car_on_page_data['model']."
+                    ".$car_on_page_data['merk']." ".$car_on_page_data['model']."
                 </h2>
                 <img src=".$car_on_page_data['image']." alt='car_image_on_page' class='car_img_on_page'
                 <h3>
-                    ".$car_on_page_data['price']." EUR
+                    ".$car_on_page_data['prijs']." EUR
                 </h3>
                 <h3>
-                    ".$car_on_page_data['mileage']."km
+                    ".$car_on_page_data['kilometerstand']."km
+                </h3>
+                <h3>
+                    ".$car_on_page_data['transmissie']."
+                </h3>
+                <h3>
+                    ".$car_on_page_data['brandstof']."
                 </h3>
                 <p>
-                    ".$car_on_page_data['description']."
+                    ".$car_on_page_data['beschrijving']."
                 </p>";
             ?>
         </main>
