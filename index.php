@@ -4,6 +4,7 @@
         <title>Webshop Home</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="./includes/css/style.css">
+        <link rel="shortcut icon" href="./includes/images/auto_favicon.ico">
     </head>
     <body>
         <?php require "./includes/header.php";?>
