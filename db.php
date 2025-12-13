@@ -1,9 +1,6 @@
 <?php
 // Database connection - pas de waarden hieronder aan voor jouw omgeving
-$host = '37.97.136.170';
-$db   = 'webshop_autos';
-$user = 'webshop_autos_db_user';
-$pass = 'CGLu7uhxghf*_s72';
+require "./includes/db_inlog_ggs.php";
 $charset = 'utf8mb4';
 
 $SQL_querry='SELECT id,merk,model,prijs,bouwjaar,kilometerstand,transmissie,brandstof,beschrijving,image FROM autos;';
@@ -36,6 +33,6 @@ try {
 
 // Gebruik de variabele $conn in andere scripts na include/require
 
-//kut mongooooooool
+//kut mongoooooooo
 ?>
 
