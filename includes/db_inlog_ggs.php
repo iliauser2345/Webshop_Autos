@@ -1,5 +1,5 @@
 <?php
-// NIET openen tijdens presentatie
+// inloggegevens database---NIET openen tijdens presentatie
 
 $host = '37.97.136.170';
 $db   = 'webshop_autos';

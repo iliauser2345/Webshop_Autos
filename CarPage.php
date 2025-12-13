@@ -15,25 +15,29 @@
         <main>
             <?php
                 echo 
-                "<h2>
+                "<h2 class='name_car'>
                     ".$car_on_page_data['merk']." ".$car_on_page_data['model']."
                 </h2>
                 <img src=".$car_on_page_data['image']." alt='car_image_on_page' class='car_img_on_page'
-                <h3>
+                <h3 class='price_and_desc_car'>
                     ".$car_on_page_data['prijs']." EUR
                 </h3>
-                <h3>
+                <h3 class='price_and_desc_car'>
                     ".$car_on_page_data['kilometerstand']."km
                 </h3>
-                <h3>
+                <h3 class='price_and_desc_car'>
                     ".$car_on_page_data['transmissie']."
                 </h3>
-                <h3>
+                <h3 class='price_and_desc_car'>
                     ".$car_on_page_data['brandstof']."
                 </h3>
-                <p>
+                <p class='desc_car'>
                     ".$car_on_page_data['beschrijving']."
-                </p>";
+                </p>
+                <form action='OrderPage.php' method='GET'>
+                    <input type='hidden' name='id_auto' value='$id'>
+                    <button type='submit'><h2>Bestellen</h2></button>
+                </form>";
             ?>
         </main>
         <?php require './includes/footer.php';?>
