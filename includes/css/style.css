@@ -1,6 +1,9 @@
 /* Body */
 body {
-    background-color: #e3e3e3;
+    background-image: url("../images/background.webp");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
     opacity: 1;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -86,11 +89,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1000;
 }
 
 .head_navbar h1 {
     color: white;
     font-size: 24px;
+    text-shadow: 1px 1px 2px #000000;
 }
 
 
@@ -105,6 +113,7 @@ body {
     gap: 15px;
     margin: 0;
     padding: 0;
+    text-shadow: 1px 1px 2px #000000;
 }
 
 .head_navbar nav ul li a {
@@ -195,11 +204,19 @@ body {
 
 .order_page h2 {
     font-size: 24px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #000000;
 }
 
 .order_page h3 {
     font-size: 14px;
     margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #000000;
+    /*box model*/
+    border-bottom: 4px solid rgb(255, 255, 255);
+    padding-bottom: 5px;
+
 }
 
 .order_page form input {
@@ -259,6 +276,41 @@ body {
     margin: 0;
     font-size: 18px;
 }
+
+
+
+
+
+
+
+
+
+/* inlog page */
+.pagina_inhoud_inloggen main {
+    width: 300px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.pagina_inhoud_inloggen form input,
+.pagina_inhoud_inloggen form button {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    /* center the button */
+    display: block;
+    box-sizing: border-box;
+}
+
+.pagina_inhoud_inloggen form button {
+    background-color: #4269d5;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
 
 
 
