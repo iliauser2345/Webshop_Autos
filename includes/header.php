@@ -3,10 +3,13 @@
     <nav>
         <ul>
             <li><a href="./index.php">Home</a></li>
-            <li><a href=""> [link naar pagina 2 hier]</a></li>
-            <li><a href=""> [link naar pagina 3 hier]</a></li>
-            <li><a href=""> [link naar pagina 4 hier]</a></li>
-            <li><a href=""> [link naar pagina 5 hier]</a></li>
+            <li><a href="./inlog_pagina.php">Inloggen</a></li>
+            <li><a href=""> Winkelmand</a></li>
+            <?php try{
+                    if ($_SESSION['admin']==1){
+                        echo 'admin';}
+                    }catch(Exception $i){
+                        echo ' ';}?>
         </ul>
     </nav> 
 </header>

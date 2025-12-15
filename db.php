@@ -8,8 +8,8 @@ $options = [
 	PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
 	PDO::ATTR_EMULATE_PREPARES   => false,
 ];
-function database_extract($connection,$querry){
-	$sql_data= $connection->prepare($querry);
+function database_extract($connection,$selection_querry){
+	$sql_data= $connection->prepare($selection_querry);
 	$sql_data-> execute();
 	$sql_data->setFetchMode(PDO::FETCH_ASSOC);
 	$extracted_data = $sql_data->fetchAll();
@@ -19,6 +19,7 @@ function database_extract($connection,$querry){
 		$conn = new PDO($dsn, $user, $pass, $options);
 		//echo 'je bent in';
 		$imp_form_data_cars = database_extract($conn,'SELECT * FROM autos;');
+		$users=database_extract($conn,'SELECT * FROM accounts;');
 
 
 	} catch (PDOException $e) {
