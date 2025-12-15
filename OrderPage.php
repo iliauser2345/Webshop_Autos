@@ -10,7 +10,7 @@ $order=$_GET['id_auto'];
         <meta charset="UTF-8">
         <link rel="stylesheet" href="./includes/css/style.css">
     </head>
-    <body>
+    <body class="order_page">
         <?php require './includes/header.php'?>
         <main>
             <h2>Bestel je auto</h2>

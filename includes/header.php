@@ -1,5 +1,5 @@
 <header class="head_navbar">
-    <h1>[Title van de webshop hier aub]</h1>
+    <h1>wheeldeal</h1>
     <nav>
         <ul>
             <li><a href="./index.php">Home</a></li>

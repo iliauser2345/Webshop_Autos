@@ -1,4 +1,5 @@
 <?php
+
     include "db.php";
     $id=$_GET['ID'];
     $car_on_page_data=$imp_form_data_cars[$id];
@@ -10,7 +11,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="./includes/css/style.css">
     </head>
-    <body>
+    <body class="car_page">
         <?php require './includes/header.php';?>
         <main>
             <?php
