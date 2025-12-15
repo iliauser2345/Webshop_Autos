@@ -220,3 +220,46 @@ body {
     background-color: #5cd462;
 }
 
+
+
+
+
+
+/*car page*/
+.name_car {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.car_img_on_page {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.price_and_desc_car {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.desc_car {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #367bd6;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+

@@ -1,4 +1,5 @@
 <?php
+
     include "db.php";
     $id=$_GET['ID'];
     $car_on_page_data=$imp_form_data_cars[$id];
