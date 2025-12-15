@@ -1,47 +1,11 @@
 /* Body */
 body {
-    background-color: #ffffff;
+    background-color: #e3e3e3;
     opacity: 1;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-/*dikke css jonguhh*
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15                              jo boyyyyyys
-16
-17
-18
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-
-
-
-/
 
 
 
@@ -63,7 +27,7 @@ body {
     border-radius: 8px;
     overflow: hidden;
     width: 220px; 
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
 }
 
 /* Hover effect */
@@ -99,9 +63,7 @@ body {
 }
 
 /* Productie jaar etc */
-.car_prod_year,
-.mileage,
-.price {
+.car_prod_year .mileage .price {
     margin: 0 10px 5px 10px;
     font-size: 12px;
     color: #000000;
@@ -199,11 +161,11 @@ body {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
+    box-sizing: border-box; /*zorg ervoor dat de padding binnen de breedte valt*/
 }
 
 #message {
-    resize: vertical;
+    resize: vertical; /* pas alleen de vertixale grootte aan */
 }
 
 /* Submit knop */
@@ -212,7 +174,7 @@ body {
     color: white;
     padding: 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 4px; /* afgeronde hoeken */
     cursor: pointer;
 }
 
@@ -225,41 +187,78 @@ body {
 
 
 
-/*car page*/
-.name_car {
-    font-size: 24px;
-    margin-bottom: 10px;
+
+/* Order Page  */
+.order_page main {
+    padding: 40px;
 }
 
-.car_img_on_page {
-    width: 100%;
-    max-width: 600px;
+.order_page h2 {
+    font-size: 24px;
+}
+
+.order_page h3 {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.order_page form input {
+    width: 250px;
+    padding: 8px;
+    margin-bottom: 10px;
     display: block;
+}
+
+.order_page form button {
+    padding: 10px 20px;
+}
+
+
+
+
+
+
+/* Car Page */
+.car_page main {
+    max-width: 700px;
+    margin: 40px auto; /* zet het in het midden */
+    padding: 20px;
+}
+
+.car_page .name_car {
+    font-size: 26px;
     margin-bottom: 15px;
 }
 
-.price_and_desc_car {
-    font-size: 16px;
+.car_page .car_img_on_page {
+    width: 100%;
+    max-height: 300px;
+    object-fit: block; /* laat de afbeelding niet vervormen */
+    margin-bottom: 20px;
+}
+
+.car_page .price_and_desc_car {
     margin: 5px 0;
+    font-size: 16px;
 }
 
-.desc_car {
+.car_page .desc_car {
     margin-top: 15px;
-    line-height: 1.4;
+    font-size: 14px;
 }
 
-form button {
+.car_page form button {
     margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #367bd6;
+    padding: 12px 20px;
+    background-color: #4269d5;
     color: white;
-    border: none;
     cursor: pointer;
 }
 
-form button h2 {
+.car_page form button h2 {
     margin: 0;
     font-size: 18px;
 }
+
 
 
