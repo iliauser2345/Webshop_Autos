@@ -1,10 +1,6 @@
 /* Body */
 body {
-    background-color: #ffffff;
-    background-image: url('.includes/images/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #e3e3e3;
     opacity: 1;
     font-family: Arial, sans-serif;
     margin: 0;
