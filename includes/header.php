@@ -3,7 +3,6 @@
     <nav>
         <ul>
             <?php
-            try{ 
                 if($_SESSION['logged_in']==true){
                     echo
                     "<li>
@@ -11,26 +10,24 @@
                         <button type='submit' action='logout.php'>Uitloggen</button>
                     </form>
                     </li>";
-                }}catch(Exception $a){
-                    echo " ";
                 }
             ?>
             <li><a href="./index.php">Home</a></li>
             <li><a href="./inlog_pagina.php">
-                <?php try{
-                            if($_SESSION['admin']==1 or $_SESSION['admin']==0){
+                <?php
+                           if($_SESSION['logged_in']==true){
                                 echo "Mijn Cabinet";
-                                $_SESSION['logged_in']=true;
+                                
+                            }elseif($_SESSION['logged_in']==false){
+                                echo 'Inloggen';
                             }
-                        }catch(Exception $b){
-                            echo "Inloggen";}?>
+                        ?>
             </a></li>
             <li><a href=""> Winkelmand</a></li>
-            <?php try{
-                    if ($_SESSION['admin']==1){
-                        echo 'admin';}
-                    }catch(Exception $i){
-                        echo ' ';}?>
+            <?php
+                if ($_SESSION['admin']==1 && $_SESSION['logged_in']==true){
+                    echo 'admin';}?>
+                    
         </ul>
     </nav> 
 </header>
