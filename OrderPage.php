@@ -1,6 +1,7 @@
 <?php
 require 'db.php';
 $order=$_GET['id_auto'];
+session_start();
 
 ?>
 <!DOCTYPE html>

@@ -8,7 +8,6 @@ $wachtwoord=$_POST['password'];
         if($users[$i]['gebruikersnaam']===$gebruikersnaam || $users[$i]['wachtwoord']===$wachtwoord){
            // echo "Logged in as ".$users[$i]['gebruikersnaam'];
             $_SESSION['admin']=$users[$i]['admin_status'];
-            $login_status=true;
             header("Location:index.php");
             exit();
         }
