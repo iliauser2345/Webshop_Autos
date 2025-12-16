@@ -2,22 +2,28 @@
     <h1>Wheeldeal</h1>
     <nav>
         <ul>
-            <?php 
+            <?php
+            try{ 
                 if($_SESSION['logged_in']==true){
                     echo
                     "<li>
+                    <form action='logout.php'>
                         <button type='submit' action='logout.php'>Uitloggen</button>
+                    </form>
                     </li>";
+                }}catch(Exception $a){
+                    echo " ";
                 }
             ?>
             <li><a href="./index.php">Home</a></li>
             <li><a href="./inlog_pagina.php">
-                <?php if($_SESSION['admin']==1 or $_SESSION['admin']==0){
-                    echo "Mijn Cabinet";
-                    $_SESSION['logged_in']=true;
-                }else{
-                    echo "inloggen";
-                }?>
+                <?php try{
+                            if($_SESSION['admin']==1 or $_SESSION['admin']==0){
+                                echo "Mijn Cabinet";
+                                $_SESSION['logged_in']=true;
+                            }
+                        }catch(Exception $b){
+                            echo "Inloggen";}?>
             </a></li>
             <li><a href=""> Winkelmand</a></li>
             <?php try{
